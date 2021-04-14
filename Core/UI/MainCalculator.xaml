@@ -1,0 +1,129 @@
+﻿<Page x:Class="calculator.Core.UI.MainCalculator"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:calculator.Core.UI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450"
+      Title="MainCalculator" Width="320.811">
+
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="54" Margin="0,6,0,0" VerticalAlignment="Top" Width="320" CornerRadius="25" Background="White">
+            <Label x:Name="resultLabel" Content="0" Margin="0,9,9,0" FontSize="16" HorizontalAlignment="Right" Width="300" HorizontalContentAlignment="Right"/>
+        </Border>
+        <Grid HorizontalAlignment="Left" Height="263" Margin="65,183,0,0" VerticalAlignment="Top" Width="190">
+            <Button x:Name="bNumOne" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+            <Button x:Name="bNumTwo" Content="2" HorizontalAlignment="Left" Margin="65,0,0,0" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+            <Button x:Name="bNumThree" Content="3" HorizontalAlignment="Left" Margin="130,0,0,0" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+            <Button x:Name="bNumFour" Content="4" HorizontalAlignment="Left" Margin="0,65,0,0" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+            <Button x:Name="bNumFive" Content="5" HorizontalAlignment="Left" Margin="65,65,0,0" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+            <Button x:Name="bNumSix" Content="6" HorizontalAlignment="Left" Margin="130,65,0,0" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+            <Button x:Name="bNumSeven" Content="7" HorizontalAlignment="Left" Margin="0,130,0,0" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+            <Button x:Name="bNumEight" Content="8" HorizontalAlignment="Left" Margin="65,130,0,0" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+            <Button x:Name="bNumNine" Content="9" HorizontalAlignment="Left" Margin="130,130,0,0" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+            <Button x:Name="bNumZero" Content="0" HorizontalAlignment="Left" Margin="65,195,0,0" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+            <Button x:Name="bAbsNum" Content="+/-" HorizontalAlignment="Left" Margin="0,195,0,0" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+            <Button x:Name="bDot" Content="," HorizontalAlignment="Left" Margin="130,195,0,0" VerticalAlignment="Top" Width="60" Height="60" Foreground="Black" BorderBrush="#FF4F4F4F" Background="#FF128277" FontSize="18"/>
+        </Grid>
+        <Button x:Name="bLBracket" Content="(" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="65,118,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bRightBracket" Content=")" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="130,118,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bFact" Content="n!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="195,118,0,0" FontStyle="Italic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bDiv" Content="÷" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="260,118,0,0" FontStyle="Italic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bMultiply" Content="Х" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="260,183,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bMinus" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="260,248,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="260,313,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bResultEqual" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="260,378,0,0" Click="bResultEqual_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bNumPi" Content="π" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="0,118,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bNumExp" Content="e" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="0,183,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bLog" Content="log" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="0,248,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bLn" Content="ln" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="0,313,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bSquare" Content="x²" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="0,378,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="bClearAll" Content="С"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="320" Height="38" Foreground="White" BorderBrush="#FF232323" Background="#FF004D47" FontSize="18" Margin="0,75,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Page>
